@@ -121,7 +121,7 @@ dmypy.json
 # Cython debug symbols
 cython_debug/
 
-dataset/base/*
+dataset/*
 
 # dataset/base/100_foggy_test_image/*.jpg
 # dataset/base/500_fogfree_image/
