@@ -1,0 +1,373 @@
+DeepGuidedNetwork(
+  (conv_in): Conv2d(3, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  (conv_out): Conv2d(16, 3, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  (rdb1): SuperResolutionDilationBlock(
+    (conv1): Conv2d(4, 4, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (conv2): Conv2d(8, 4, kernel_size=(3, 3), stride=(1, 1), padding=(2, 2), dilation=(2, 2))
+    (conv3): Conv2d(12, 4, kernel_size=(3, 3), stride=(1, 1), padding=(4, 4), dilation=(4, 4))
+    (conv4): Conv2d(16, 4, kernel_size=(3, 3), stride=(1, 1), padding=(8, 8), dilation=(8, 8))
+    (channel_attention): ChannelAttentionLayer(
+      (avg_pool): AdaptiveAvgPool2d(output_size=1)
+      (attention): Sequential(
+        (0): Conv2d(16, 2, kernel_size=(1, 1), stride=(1, 1))
+        (1): ReLU(inplace=True)
+        (2): Conv2d(2, 16, kernel_size=(1, 1), stride=(1, 1))
+        (3): Sigmoid()
+      )
+    )
+    (pixel_attention): PixelAttentionLayer(
+      (attention): Sequential(
+        (0): Conv2d(16, 2, kernel_size=(1, 1), stride=(1, 1))
+        (1): ReLU(inplace=True)
+        (2): Conv2d(2, 1, kernel_size=(1, 1), stride=(1, 1))
+        (3): Sigmoid()
+      )
+    )
+    (conv_1x1): Conv2d(16, 16, kernel_size=(1, 1), stride=(1, 1))
+  )
+  (rdb2): SuperResolutionDilationBlock(
+    (conv1): Conv2d(4, 4, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (conv2): Conv2d(8, 4, kernel_size=(3, 3), stride=(1, 1), padding=(2, 2), dilation=(2, 2))
+    (conv3): Conv2d(12, 4, kernel_size=(3, 3), stride=(1, 1), padding=(4, 4), dilation=(4, 4))
+    (conv4): Conv2d(16, 4, kernel_size=(3, 3), stride=(1, 1), padding=(8, 8), dilation=(8, 8))
+    (channel_attention): ChannelAttentionLayer(
+      (avg_pool): AdaptiveAvgPool2d(output_size=1)
+      (attention): Sequential(
+        (0): Conv2d(16, 2, kernel_size=(1, 1), stride=(1, 1))
+        (1): ReLU(inplace=True)
+        (2): Conv2d(2, 16, kernel_size=(1, 1), stride=(1, 1))
+        (3): Sigmoid()
+      )
+    )
+    (pixel_attention): PixelAttentionLayer(
+      (attention): Sequential(
+        (0): Conv2d(16, 2, kernel_size=(1, 1), stride=(1, 1))
+        (1): ReLU(inplace=True)
+        (2): Conv2d(2, 1, kernel_size=(1, 1), stride=(1, 1))
+        (3): Sigmoid()
+      )
+    )
+    (conv_1x1): Conv2d(16, 16, kernel_size=(1, 1), stride=(1, 1))
+  )
+  (rdb3): SuperResolutionDilationBlock(
+    (conv1): Conv2d(4, 4, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (conv2): Conv2d(8, 4, kernel_size=(3, 3), stride=(1, 1), padding=(2, 2), dilation=(2, 2))
+    (conv3): Conv2d(12, 4, kernel_size=(3, 3), stride=(1, 1), padding=(4, 4), dilation=(4, 4))
+    (conv4): Conv2d(16, 4, kernel_size=(3, 3), stride=(1, 1), padding=(8, 8), dilation=(8, 8))
+    (channel_attention): ChannelAttentionLayer(
+      (avg_pool): AdaptiveAvgPool2d(output_size=1)
+      (attention): Sequential(
+        (0): Conv2d(16, 2, kernel_size=(1, 1), stride=(1, 1))
+        (1): ReLU(inplace=True)
+        (2): Conv2d(2, 16, kernel_size=(1, 1), stride=(1, 1))
+        (3): Sigmoid()
+      )
+    )
+    (pixel_attention): PixelAttentionLayer(
+      (attention): Sequential(
+        (0): Conv2d(16, 2, kernel_size=(1, 1), stride=(1, 1))
+        (1): ReLU(inplace=True)
+        (2): Conv2d(2, 1, kernel_size=(1, 1), stride=(1, 1))
+        (3): Sigmoid()
+      )
+    )
+    (conv_1x1): Conv2d(16, 16, kernel_size=(1, 1), stride=(1, 1))
+  )
+  (rdb4): SuperResolutionDilationBlock(
+    (conv1): Conv2d(4, 4, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (conv2): Conv2d(8, 4, kernel_size=(3, 3), stride=(1, 1), padding=(2, 2), dilation=(2, 2))
+    (conv3): Conv2d(12, 4, kernel_size=(3, 3), stride=(1, 1), padding=(4, 4), dilation=(4, 4))
+    (conv4): Conv2d(16, 4, kernel_size=(3, 3), stride=(1, 1), padding=(8, 8), dilation=(8, 8))
+    (channel_attention): ChannelAttentionLayer(
+      (avg_pool): AdaptiveAvgPool2d(output_size=1)
+      (attention): Sequential(
+        (0): Conv2d(16, 2, kernel_size=(1, 1), stride=(1, 1))
+        (1): ReLU(inplace=True)
+        (2): Conv2d(2, 16, kernel_size=(1, 1), stride=(1, 1))
+        (3): Sigmoid()
+      )
+    )
+    (pixel_attention): PixelAttentionLayer(
+      (attention): Sequential(
+        (0): Conv2d(16, 2, kernel_size=(1, 1), stride=(1, 1))
+        (1): ReLU(inplace=True)
+        (2): Conv2d(2, 1, kernel_size=(1, 1), stride=(1, 1))
+        (3): Sigmoid()
+      )
+    )
+    (conv_1x1): Conv2d(16, 16, kernel_size=(1, 1), stride=(1, 1))
+  )
+  (guided_filter): ConvolutionalGuidedFilter(
+    (box_filter): Conv2d(3, 3, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=3, bias=False)
+    (conv_a): Sequential(
+      (0): Conv2d(6, 32, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (1): AdaptiveInstanceNormalization(
+        (instance_norm): InstanceNorm2d(32, eps=0.001, momentum=0.999, affine=True, track_running_stats=False)
+      )
+      (2): ReLU(inplace=True)
+      (3): Conv2d(32, 32, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (4): AdaptiveInstanceNormalization(
+        (instance_norm): InstanceNorm2d(32, eps=0.001, momentum=0.999, affine=True, track_running_stats=False)
+      )
+      (5): ReLU(inplace=True)
+      (6): Conv2d(32, 3, kernel_size=(1, 1), stride=(1, 1), bias=False)
+    )
+  )
+  (dehaze_network): DehazingTransformer(
+    (patch_embed): PatchEmbedding(
+      (projection): Conv2d(3, 24, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), padding_mode=reflect)
+    )
+    (encoder_stage1): TransformerStage(
+      (blocks): ModuleList(
+        (0-8): 9 x VisionTransformerBlock(
+          (pre_norm): Identity()
+          (attention_layer): AdaptiveAttention(
+            (conv_layer): Sequential(
+              (0): Conv2d(24, 24, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), padding_mode=reflect)
+              (1): ReLU(inplace=True)
+              (2): Conv2d(24, 24, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), padding_mode=reflect)
+            )
+          )
+          (post_norm): Identity()
+          (mlp_layer): MultiLayerPerceptron(
+            (mlp_layers): Sequential(
+              (0): Conv2d(24, 48, kernel_size=(1, 1), stride=(1, 1))
+              (1): ReLU(inplace=True)
+              (2): Conv2d(48, 24, kernel_size=(1, 1), stride=(1, 1))
+            )
+          )
+        )
+        (9-11): 3 x VisionTransformerBlock(
+          (pre_norm): RevisedLayerNorm(
+            (scale_mlp): Conv2d(1, 24, kernel_size=(1, 1), stride=(1, 1))
+            (shift_mlp): Conv2d(1, 24, kernel_size=(1, 1), stride=(1, 1))
+          )
+          (attention_layer): AdaptiveAttention(
+            (conv_layer): Sequential(
+              (0): Conv2d(24, 24, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), padding_mode=reflect)
+              (1): ReLU(inplace=True)
+              (2): Conv2d(24, 24, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), padding_mode=reflect)
+            )
+            (value_projection): Conv2d(24, 24, kernel_size=(1, 1), stride=(1, 1))
+            (output_projection): Conv2d(24, 24, kernel_size=(1, 1), stride=(1, 1))
+            (query_key_projection): Conv2d(24, 48, kernel_size=(1, 1), stride=(1, 1))
+            (window_attention): LocalWindowAttention(
+              (relative_mlp): Sequential(
+                (0): Linear(in_features=2, out_features=256, bias=True)
+                (1): ReLU(inplace=True)
+                (2): Linear(in_features=256, out_features=2, bias=True)
+              )
+              (attention_softmax): Softmax(dim=-1)
+            )
+          )
+          (post_norm): Identity()
+          (mlp_layer): MultiLayerPerceptron(
+            (mlp_layers): Sequential(
+              (0): Conv2d(24, 48, kernel_size=(1, 1), stride=(1, 1))
+              (1): ReLU(inplace=True)
+              (2): Conv2d(48, 24, kernel_size=(1, 1), stride=(1, 1))
+            )
+          )
+        )
+      )
+    )
+    (downsample1): PatchEmbedding(
+      (projection): Conv2d(24, 48, kernel_size=(2, 2), stride=(2, 2), padding_mode=reflect)
+    )
+    (skip_connection1): Conv2d(24, 24, kernel_size=(1, 1), stride=(1, 1))
+    (encoder_stage2): TransformerStage(
+      (blocks): ModuleList(
+        (0-5): 6 x VisionTransformerBlock(
+          (pre_norm): Identity()
+          (attention_layer): AdaptiveAttention(
+            (conv_layer): Sequential(
+              (0): Conv2d(48, 48, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), padding_mode=reflect)
+              (1): ReLU(inplace=True)
+              (2): Conv2d(48, 48, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), padding_mode=reflect)
+            )
+          )
+          (post_norm): Identity()
+          (mlp_layer): MultiLayerPerceptron(
+            (mlp_layers): Sequential(
+              (0): Conv2d(48, 192, kernel_size=(1, 1), stride=(1, 1))
+              (1): ReLU(inplace=True)
+              (2): Conv2d(192, 48, kernel_size=(1, 1), stride=(1, 1))
+            )
+          )
+        )
+        (6-11): 6 x VisionTransformerBlock(
+          (pre_norm): RevisedLayerNorm(
+            (scale_mlp): Conv2d(1, 48, kernel_size=(1, 1), stride=(1, 1))
+            (shift_mlp): Conv2d(1, 48, kernel_size=(1, 1), stride=(1, 1))
+          )
+          (attention_layer): AdaptiveAttention(
+            (conv_layer): Sequential(
+              (0): Conv2d(48, 48, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), padding_mode=reflect)
+              (1): ReLU(inplace=True)
+              (2): Conv2d(48, 48, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), padding_mode=reflect)
+            )
+            (value_projection): Conv2d(48, 48, kernel_size=(1, 1), stride=(1, 1))
+            (output_projection): Conv2d(48, 48, kernel_size=(1, 1), stride=(1, 1))
+            (query_key_projection): Conv2d(48, 96, kernel_size=(1, 1), stride=(1, 1))
+            (window_attention): LocalWindowAttention(
+              (relative_mlp): Sequential(
+                (0): Linear(in_features=2, out_features=256, bias=True)
+                (1): ReLU(inplace=True)
+                (2): Linear(in_features=256, out_features=4, bias=True)
+              )
+              (attention_softmax): Softmax(dim=-1)
+            )
+          )
+          (post_norm): Identity()
+          (mlp_layer): MultiLayerPerceptron(
+            (mlp_layers): Sequential(
+              (0): Conv2d(48, 192, kernel_size=(1, 1), stride=(1, 1))
+              (1): ReLU(inplace=True)
+              (2): Conv2d(192, 48, kernel_size=(1, 1), stride=(1, 1))
+            )
+          )
+        )
+      )
+    )
+    (downsample2): PatchEmbedding(
+      (projection): Conv2d(48, 96, kernel_size=(2, 2), stride=(2, 2), padding_mode=reflect)
+    )
+    (skip_connection2): Conv2d(48, 48, kernel_size=(1, 1), stride=(1, 1))
+    (encoder_stage3): TransformerStage(
+      (blocks): ModuleList(
+        (0-2): 3 x VisionTransformerBlock(
+          (pre_norm): Identity()
+          (attention_layer): AdaptiveAttention(
+            (conv_layer): Sequential(
+              (0): Conv2d(96, 96, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), padding_mode=reflect)
+              (1): ReLU(inplace=True)
+              (2): Conv2d(96, 96, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), padding_mode=reflect)
+            )
+          )
+          (post_norm): Identity()
+          (mlp_layer): MultiLayerPerceptron(
+            (mlp_layers): Sequential(
+              (0): Conv2d(96, 384, kernel_size=(1, 1), stride=(1, 1))
+              (1): ReLU(inplace=True)
+              (2): Conv2d(384, 96, kernel_size=(1, 1), stride=(1, 1))
+            )
+          )
+        )
+        (3-11): 9 x VisionTransformerBlock(
+          (pre_norm): RevisedLayerNorm(
+            (scale_mlp): Conv2d(1, 96, kernel_size=(1, 1), stride=(1, 1))
+            (shift_mlp): Conv2d(1, 96, kernel_size=(1, 1), stride=(1, 1))
+          )
+          (attention_layer): AdaptiveAttention(
+            (conv_layer): Sequential(
+              (0): Conv2d(96, 96, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), padding_mode=reflect)
+              (1): ReLU(inplace=True)
+              (2): Conv2d(96, 96, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), padding_mode=reflect)
+            )
+            (value_projection): Conv2d(96, 96, kernel_size=(1, 1), stride=(1, 1))
+            (output_projection): Conv2d(96, 96, kernel_size=(1, 1), stride=(1, 1))
+            (query_key_projection): Conv2d(96, 192, kernel_size=(1, 1), stride=(1, 1))
+            (window_attention): LocalWindowAttention(
+              (relative_mlp): Sequential(
+                (0): Linear(in_features=2, out_features=256, bias=True)
+                (1): ReLU(inplace=True)
+                (2): Linear(in_features=256, out_features=6, bias=True)
+              )
+              (attention_softmax): Softmax(dim=-1)
+            )
+          )
+          (post_norm): Identity()
+          (mlp_layer): MultiLayerPerceptron(
+            (mlp_layers): Sequential(
+              (0): Conv2d(96, 384, kernel_size=(1, 1), stride=(1, 1))
+              (1): ReLU(inplace=True)
+              (2): Conv2d(384, 96, kernel_size=(1, 1), stride=(1, 1))
+            )
+          )
+        )
+      )
+    )
+    (upsample1): PatchReconstruction(
+      (projection): Sequential(
+        (0): Conv2d(96, 192, kernel_size=(1, 1), stride=(1, 1), padding_mode=reflect)
+        (1): PixelShuffle(upscale_factor=2)
+      )
+    )
+    (fusion_layer1): SelectiveKernelFusion(
+      (global_avg_pool): AdaptiveAvgPool2d(output_size=1)
+      (channel_attention): Sequential(
+        (0): Conv2d(48, 6, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (1): ReLU()
+        (2): Conv2d(6, 96, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      )
+      (softmax): Softmax(dim=1)
+    )
+    (decoder_stage1): TransformerStage(
+      (blocks): ModuleList(
+        (0-5): 6 x VisionTransformerBlock(
+          (pre_norm): Identity()
+          (attention_layer): AdaptiveAttention(
+            (conv_layer): Sequential(
+              (0): Conv2d(48, 48, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), padding_mode=reflect)
+              (1): ReLU(inplace=True)
+              (2): Conv2d(48, 48, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), padding_mode=reflect)
+            )
+          )
+          (post_norm): Identity()
+          (mlp_layer): MultiLayerPerceptron(
+            (mlp_layers): Sequential(
+              (0): Conv2d(48, 96, kernel_size=(1, 1), stride=(1, 1))
+              (1): ReLU(inplace=True)
+              (2): Conv2d(96, 48, kernel_size=(1, 1), stride=(1, 1))
+            )
+          )
+        )
+      )
+    )
+    (upsample2): PatchReconstruction(
+      (projection): Sequential(
+        (0): Conv2d(48, 96, kernel_size=(1, 1), stride=(1, 1), padding_mode=reflect)
+        (1): PixelShuffle(upscale_factor=2)
+      )
+    )
+    (fusion_layer2): SelectiveKernelFusion(
+      (global_avg_pool): AdaptiveAvgPool2d(output_size=1)
+      (channel_attention): Sequential(
+        (0): Conv2d(24, 4, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (1): ReLU()
+        (2): Conv2d(4, 48, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      )
+      (softmax): Softmax(dim=1)
+    )
+    (decoder_stage2): TransformerStage(
+      (blocks): ModuleList(
+        (0-5): 6 x VisionTransformerBlock(
+          (pre_norm): Identity()
+          (attention_layer): AdaptiveAttention(
+            (conv_layer): Sequential(
+              (0): Conv2d(24, 24, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), padding_mode=reflect)
+              (1): ReLU(inplace=True)
+              (2): Conv2d(24, 24, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), padding_mode=reflect)
+            )
+          )
+          (post_norm): Identity()
+          (mlp_layer): MultiLayerPerceptron(
+            (mlp_layers): Sequential(
+              (0): Conv2d(24, 48, kernel_size=(1, 1), stride=(1, 1))
+              (1): ReLU(inplace=True)
+              (2): Conv2d(48, 24, kernel_size=(1, 1), stride=(1, 1))
+            )
+          )
+        )
+      )
+    )
+    (patch_reconstruction): PatchReconstruction(
+      (projection): Sequential(
+        (0): Conv2d(24, 4, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), padding_mode=reflect)
+        (1): PixelShuffle(upscale_factor=1)
+      )
+    )
+  )
+  (downsample): Upsample(scale_factor=0.5, mode='bilinear')
+  (upsample): Upsample(scale_factor=2.0, mode='bilinear')
+)
