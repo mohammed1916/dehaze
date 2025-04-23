@@ -1,0 +1,11 @@
+Date: 2025-04-23 19:14:08, Time_Cost: 14s, Epoch: [1/25], Train_PSNR: 20.41, Val_PSNR: 15.13, Val_SSIM: 0.3332
+Date: 2025-04-23 19:14:19, Time_Cost: 11s, Epoch: [2/25], Train_PSNR: 16.44, Val_PSNR: 15.13, Val_SSIM: 0.3332
+Date: 2025-04-23 19:14:31, Time_Cost: 12s, Epoch: [3/25], Train_PSNR: 18.89, Val_PSNR: 15.13, Val_SSIM: 0.3332
+Date: 2025-04-23 19:14:43, Time_Cost: 13s, Epoch: [4/25], Train_PSNR: 16.49, Val_PSNR: 15.13, Val_SSIM: 0.3332
+Date: 2025-04-23 19:14:55, Time_Cost: 12s, Epoch: [5/25], Train_PSNR: 20.21, Val_PSNR: 15.13, Val_SSIM: 0.3332
+Date: 2025-04-23 19:15:07, Time_Cost: 12s, Epoch: [6/25], Train_PSNR: 19.17, Val_PSNR: 15.13, Val_SSIM: 0.3332
+Date: 2025-04-23 19:15:19, Time_Cost: 12s, Epoch: [7/25], Train_PSNR: 19.84, Val_PSNR: 15.13, Val_SSIM: 0.3332
+Date: 2025-04-23 19:16:52, Time_Cost: 13s, Epoch: [1/25], Train_PSNR: 19.28, Val_PSNR: 15.13, Val_SSIM: 0.3332
+Date: 2025-04-23 19:17:05, Time_Cost: 13s, Epoch: [2/25], Train_PSNR: 18.05, Val_PSNR: 15.13, Val_SSIM: 0.3332
+Date: 2025-04-23 19:17:21, Time_Cost: 16s, Epoch: [3/25], Train_PSNR: 21.21, Val_PSNR: 15.13, Val_SSIM: 0.3332
+Date: 2025-04-23 19:17:35, Time_Cost: 14s, Epoch: [4/25], Train_PSNR: 22.93, Val_PSNR: 15.13, Val_SSIM: 0.3332
