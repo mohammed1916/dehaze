@@ -1,0 +1,1 @@
+Date: 2025-04-30 17:22:48, Time_Cost: 95s, Epoch: [112/200], Train_PSNR: 36.86, Val_PSNR: 37.01, Val_SSIM: 0.9377
