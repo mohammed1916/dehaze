@@ -1,0 +1,10 @@
+Date: 2025-05-02 08:51:24, Time_Cost: 396s, Epoch: [1/10], Train_PSNR: 21.84, Val_PSNR: 24.32, Val_SSIM: 0.8584
+Date: 2025-05-02 08:57:41, Time_Cost: 377s, Epoch: [2/10], Train_PSNR: 21.84, Val_PSNR: 24.32, Val_SSIM: 0.8593
+Date: 2025-05-02 09:04:05, Time_Cost: 383s, Epoch: [3/10], Train_PSNR: 21.87, Val_PSNR: 24.18, Val_SSIM: 0.8569
+Date: 2025-05-02 09:10:30, Time_Cost: 385s, Epoch: [4/10], Train_PSNR: 21.92, Val_PSNR: 24.19, Val_SSIM: 0.8575
+Date: 2025-05-02 09:16:57, Time_Cost: 387s, Epoch: [5/10], Train_PSNR: 21.97, Val_PSNR: 24.23, Val_SSIM: 0.8586
+Date: 2025-05-02 09:23:24, Time_Cost: 387s, Epoch: [6/10], Train_PSNR: 22.35, Val_PSNR: 24.48, Val_SSIM: 0.8614
+Date: 2025-05-02 09:29:51, Time_Cost: 387s, Epoch: [7/10], Train_PSNR: 22.40, Val_PSNR: 24.44, Val_SSIM: 0.8611
+Date: 2025-05-02 09:36:21, Time_Cost: 390s, Epoch: [8/10], Train_PSNR: 22.45, Val_PSNR: 24.59, Val_SSIM: 0.8619
+Date: 2025-05-02 09:42:54, Time_Cost: 393s, Epoch: [9/10], Train_PSNR: 22.48, Val_PSNR: 24.49, Val_SSIM: 0.8622
+Date: 2025-05-02 09:49:39, Time_Cost: 404s, Epoch: [10/10], Train_PSNR: 22.51, Val_PSNR: 24.57, Val_SSIM: 0.8633
