@@ -1,5 +1,5 @@
-# dgtdn
+# Deep Guided Dehazing
 
-This repo will build upon the following paper with certain improvements.
+Teacher training from scale x4 to x times for super resolution: [dehaze/dehaze-kernel copy.ipynb at fe534aa834de4c08355cf56391879a2e4e055098 · mohammed1916/dehaze](https://github.com/mohammed1916/dehaze/blob/fe534aa834de4c08355cf56391879a2e4e055098/dehaze-kernel%20copy.ipynb)
 
-ref: https://www.nature.com/articles/s41598-023-41561-z
+Teacher finetuning from scale x2 to x for super resolution: [dehaze/dehaze-kernel copy.ipynb at c59b98bac4c31204bfde54574e59d77f606fb825 · mohammed1916/dehaze](https://github.com/mohammed1916/dehaze/blob/c59b98bac4c31204bfde54574e59d77f606fb825/dehaze-kernel%20copy.ipynb)
