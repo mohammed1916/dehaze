@@ -130,3 +130,4 @@ dataset/*
 # dataset/base/FADE_release
 # dataset/base/Human_Subjective_Study_Result
 *._*
+*.pth
